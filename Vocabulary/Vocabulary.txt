@@ -1,2 +1,0 @@
-ORBvoc.txt.tar.gz  download: https://github.com/BertaBescos/DynaSLAM/tree/master/Vocabulary
-voc.tar.bz2  download: https://github.com/jiexiong2016/GCNv2_SLAM/tree/master/Vocabulary
