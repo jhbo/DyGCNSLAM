@@ -1,0 +1,28 @@
+GCN_PATH=GCN2/gcn2_320x240.pt ./GCN2/rgbd_gcn Vocabulary/ORBvoc.bin GCN2/TUM2.yaml datasets/TUM/rgbd_dataset_freiburg2_pioneer_slam datasets/TUM/rgbd_dataset_freiburg2_pioneer_slam/associations.txt 
+
+
+
+##注意取出两个.txt文件的前几行注解
+python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associations.txt
+
+
+GCN_PATH=GCN2/gcn2_320x240.pt ./GCN2/rgbd_gcn Vocabulary/ORBvoc.bin GCN2/TUM3.yaml ../datasets/rgbd_dynamic_object/rgbd_dataset_freiburg3_walking_xyz ../datasets/rgbd_dynamic_object/rgbd_dataset_freiburg3_walking_xyz/fr3_walking_xyz.txt data/mask data/output/
+
+
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM3.yaml  ../datasets/rgbd_dynamic_object/rgbd_dataset_freiburg3_walking_xyz ../datasets/rgbd_dynamic_object/rgbd_dataset_freiburg3_walking_xyz/fr3_walking_xyz.txt data/mask data/output
+
+
+
+Initialated Mask RCNN network...
+Creating net instance...
+Loading net parameters...
+Mask R-CNN loaded!
+
+DynaSLAM Copyright (C) 2018 Berta Bescos, University of Zaragoza.
+
+Input sensor was set to: RGB-D
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+
